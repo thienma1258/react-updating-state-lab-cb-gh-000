@@ -17,7 +17,7 @@ super(props);
 <button className='resolution' onClick={()=>{
   let videoConfig={...this.state.video};
   videoConfig.resolution='720p';
-  this.setState({videoConfig});
+  this.setState({video:videoConfig});
 
 }}>{}</button>
 </div>
