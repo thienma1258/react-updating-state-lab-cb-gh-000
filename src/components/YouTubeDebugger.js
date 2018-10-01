@@ -9,6 +9,7 @@ super(props);
   }
   render(){
     return(
+      <div>
       <button className='bitrate' onClick={()=>{
         let settingsConfig={...this.state.settings};
         settingsConfig.bitrate=12;
@@ -17,9 +18,9 @@ super(props);
   let videoConfig={...this.state.video};
   videoConfig.resolution='720p';
   this.setState({videoConfig});
-  
-}}>{}</button>
 
+}}>{}</button>
+</div>
     )
   }
 }
