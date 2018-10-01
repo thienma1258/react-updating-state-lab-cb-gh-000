@@ -10,7 +10,7 @@ super(props);
   }
   render(){
     return(
-      <button onClick={()=>{setState(timesClicked:timesClicked+1)}}>{this.state.timesClicked}</button>
+      <button onClick={()=>{setState(timesClicked:this.state.timesClicked+1)}}>{this.state.timesClicked}</button>
     )
   }
 }
