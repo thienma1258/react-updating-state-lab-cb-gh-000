@@ -13,7 +13,12 @@ super(props);
         let settingsConfig={...this.state.settings};
         settingsConfig.bitrate=12;
         this.setState({settingsConfig})}}>{this.state.timesClicked}</button>
-<button className='bitrate' onClick={()=>{this.setState({timesClicked:this.state.timesClicked+1})}}>{this.state.timesClicked}</button>
+<button className='bitrate' onClick={()=>{
+  let videoConfig={...this.state.video};
+  videoConfig.resolution='720p';
+  this.setState({videoConfig});
+  
+}}>{}</button>
 
     )
   }
