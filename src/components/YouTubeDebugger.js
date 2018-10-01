@@ -10,10 +10,9 @@ super(props);
   render(){
     return(
       <div>
-      <button className="bitrate" onClick={()=>{this.setState({settings.bitrate:12})}}>{this.state.timesClicked}</button>
-<button className="bitrate" onClick={()=>{this.setState({timesClicked:this.state.timesClicked+1})}}>{this.state.timesClicked}</button>
+      <button className='bitrate' onClick={()=>{this.setState({settings.bitrate:12})}}>{this.state.timesClicked}</button>
+<button className='bitrate' onClick={()=>{this.setState({timesClicked:this.state.timesClicked+1})}}>{this.state.timesClicked}</button>
 </div>
     )
   }
 }
-  
