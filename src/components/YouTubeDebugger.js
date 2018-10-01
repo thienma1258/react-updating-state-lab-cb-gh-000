@@ -15,7 +15,7 @@ super(props);
         settingsConfig.bitrate=12;
         this.setState({settings:settingsConfig})}}>{this.state.timesClicked}</button>
 <button className='resolution' onClick={()=>{
-  let settingConfig={...this.state.settingsConfig};
+  let settingConfig={...this.state.settings};
   settingConfig.video.resolution='720p';
   this.setState({settings:settingConfig});
 
